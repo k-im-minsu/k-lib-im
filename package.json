@@ -1,20 +1,17 @@
 {
-  "name": "@ox-lib/node-common",
-  "version": "0.0.0",
+  "name": "k-lib-im",
+  "version": "0.0.1",
   "description": "node common library",
   "main": "common.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ox-lib/node-common"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "url": "https://github.com/k-im-minsu/k-lib-im"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ox-lib/node-common/issues"
+    "url": "https://github.com/k-im-minsu/k-lib-im/issues"
   },
-  "homepage": "https://github.com/ox-lib/node-common#readme",
+  "homepage": "https://github.com/k-im-minsu/k-lib-im#readme",
   "dependencies": {
     "md5": "^2.3.0",
     "moment": "^2.29.4"
