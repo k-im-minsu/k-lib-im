@@ -1,0 +1,22 @@
+{
+  "name": "@ox-lib/node-common",
+  "version": "0.0.0",
+  "description": "node common library",
+  "main": "common.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ox-lib/node-common"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ox-lib/node-common/issues"
+  },
+  "homepage": "https://github.com/ox-lib/node-common#readme",
+  "dependencies": {
+    "md5": "^2.3.0",
+    "moment": "^2.29.4"
+  }
+}
