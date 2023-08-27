@@ -1,11 +1,11 @@
 
 //@ts-check
 
-/**@typedef {import('./http.js')} Http*/
+/**@typedef {import('./common/http.js')} Http*/
 
-/**@typedef {import('./string.js')} Str*/
+/**@typedef {import('./common/string.js')} Str*/
 
-/**@typedef {import('./time.js')} Time*/
+/**@typedef {import('./common/time.js')} Time*/
 
 /**
  * @typedef {object} Common
@@ -15,7 +15,7 @@
 /**@type {Common} */
 const common=(function(){
     /**@type {Http} */
-    this.http=require('./http.js')
+    this.http=require('./common/http.js')
     /**
      * @function sleep use await to sleep by ms
      * @param {number} ms millisecond
@@ -32,7 +32,7 @@ const common=(function(){
 /**@type {Common&Str&Time} */
 module.exports=(function(){
     Object.assign(this,common)
-    Object.assign(this,require('./string.js'))
-    Object.assign(this,require('./time.js'))
+    Object.assign(this,require('./common/string.js'))
+    Object.assign(this,require('./common/time.js'))
     return this;
 })();
