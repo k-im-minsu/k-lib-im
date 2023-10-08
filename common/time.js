@@ -24,6 +24,7 @@ exports.time_view=(format='YYYY/MM/DD HH:mm:ss',tick=undefined,add_type='',add_n
             }
             break;
         default :
+        add_type=''
             break;
     }
     if(is_utc){

@@ -1,6 +1,6 @@
 {
   "name": "k-lib-im",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "node common library",
   "main": "common.js",
   "repository": {
@@ -14,6 +14,7 @@
   "homepage": "https://github.com/k-im-minsu/k-lib-im#readme",
   "dependencies": {
     "md5": "^2.3.0",
-    "moment": "^2.29.4"
+    "moment": "^2.29.4",
+    "zlib": "^1.0.5"
   }
 }

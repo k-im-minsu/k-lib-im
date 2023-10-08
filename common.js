@@ -7,6 +7,8 @@
 
 /**@typedef {import('./common/time.js')} Time*/
 
+/**@typedef {import('./common/math.js')} Math*/
+
 /**
  * @typedef {object} Common
  * @property {Http} http
@@ -29,10 +31,11 @@ const common=(function(){
      return this;
 })()
 
-/**@type {Common&Str&Time} */
+/**@type {Common&Str&Time&Math} */
 module.exports=(function(){
     Object.assign(this,common)
     Object.assign(this,require('./common/string.js'))
     Object.assign(this,require('./common/time.js'))
+    Object.assign(this,require('./common/math.js'))
     return this;
 })();
