@@ -1,6 +1,6 @@
 {
   "name": "k-lib-im",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "node common library",
   "main": "common.js",
   "repository": {
