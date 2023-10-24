@@ -1,6 +1,7 @@
 
 
 var hasOwnProperty = Object.prototype.hasOwnProperty;
+const specify={}
 function assign(dest,src){
     if(dest!==src){
         for(var k in src){
@@ -11,7 +12,11 @@ function assign(dest,src){
                    case 'object':
                         const dv=dest[k]
                         if(dv&&(t===typeof dv)){
-                            assign(dv,v)
+                            if(specify[v.constructor.name]){
+                                dest[k]=v
+                            }else{
+                                assign(dv,v)
+                            }
                         }else{
                             dest[k]=v
                         }
@@ -41,4 +46,11 @@ exports.merge=(target,...args) =>{
         }
     }
     return target;
+}
+/**
+ * specify objects from the corresponding class as values
+ * @param {object} obj 
+ */
+exports.class_to_value=(obj)=>{
+    specify[obj.constructor.name]=true
 }
