@@ -17,21 +17,21 @@
  * @property {Function} sleep
  */
 /**@type {Common} */
-const common=(function(){
-    /**@type {Http} */
-    this.http=require('./common/http.js')
+const common = (() => {
+    const obj = {};
+    /** @type {Http} */
+    obj.http = require('./common/http.js');
+
     /**
-     * @function sleep use await to sleep by ms
+     * @function sleep
+     * use await to sleep by ms
      * @param {number} ms millisecond
      * @return {Promise<null>}
      */
-    this.sleep=(ms)=>{
-         return new Promise(resolve=>{
-             setTimeout(resolve,ms)
-         })
-     }
-     return this;
-})()
+    obj.sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+    return obj;
+})();
 
 /**@type {Common&Str&Time&Math&Assign} */
 module.exports=(function(){
